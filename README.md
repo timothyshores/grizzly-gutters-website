@@ -19,6 +19,10 @@ Wired to Formspree endpoint `xbdnwlbz`. Submissions currently land in Tim's
 inbox. **The day Josh pays, add his email as a recipient on that form in the
 Formspree dashboard.** No code change needed.
 
+## Start here
+
+**[NEXT-SESSION.md](NEXT-SESSION.md)** - open decisions and what to do next.
+
 ## Other docs in this repo
 
 | File | What it covers |
