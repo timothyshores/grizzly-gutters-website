@@ -1,0 +1,132 @@
+<title>Gutter Websites &mdash; Call Card</title>
+<style>
+  :root{
+    --bg:#f6f3ee; --card:#fff; --ink:#1e2429; --soft:#5a6167;
+    --line:#e2dccf; --rust:#c15a2e; --good:#2f7d54; --warn:#b8842a;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#141a1f; --card:#1c242b; --ink:#e8e6e1; --soft:#9aa4ac;
+           --line:#2c353d; --rust:#e0784a; }
+  }
+  :root[data-theme="dark"]{
+    --bg:#141a1f; --card:#1c242b; --ink:#e8e6e1; --soft:#9aa4ac;
+    --line:#2c353d; --rust:#e0784a;
+  }
+  :root[data-theme="light"]{
+    --bg:#f6f3ee; --card:#fff; --ink:#1e2429; --soft:#5a6167;
+    --line:#e2dccf; --rust:#c15a2e;
+  }
+  *{ box-sizing:border-box; }
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    background:var(--bg); color:var(--ink); line-height:1.5;
+    padding:24px 18px 48px; max-width:640px; margin:0 auto;
+  }
+  h1{ font-size:1.35rem; letter-spacing:-.01em; margin:0 0 4px; }
+  .sub{ color:var(--soft); font-size:.87rem; margin-bottom:22px; }
+  h2{ font-size:.78rem; text-transform:uppercase; letter-spacing:.06em;
+    color:var(--soft); margin:26px 0 8px; }
+  .card{ background:var(--card); border:1px solid var(--line);
+    border-radius:10px; padding:16px 18px; }
+  .row{ display:flex; gap:12px; padding:7px 0; border-top:1px solid var(--line);
+    font-size:.9rem; align-items:baseline; }
+  .row:first-child{ border-top:none; }
+  .row .k{ color:var(--soft); min-width:120px; flex-shrink:0; }
+  .hero{ background:var(--card); border:1px solid var(--line);
+    border-left:3px solid var(--good); border-radius:8px;
+    padding:14px 16px; font-size:1rem; font-weight:600; }
+  .say{ background:var(--card); border:1px solid var(--line);
+    border-left:3px solid var(--rust); border-radius:8px; padding:14px 16px;
+    font-size:.92rem; }
+  .say p{ margin:0 0 12px; }
+  .say p:last-child{ margin-bottom:0; }
+  .say .q{ color:var(--soft); font-size:.8rem; display:block; margin-bottom:2px; }
+  ul{ margin:0; padding-left:20px; font-size:.9rem; }
+  li{ margin-bottom:7px; }
+  li:last-child{ margin-bottom:0; }
+  .never{ border-left-color:var(--warn); }
+  a{ color:var(--rust); }
+</style>
+
+<h1>Call Card</h1>
+<div class="sub">
+  Everything you need on a call, one screen. Screenshot it.<br>
+  Details and numbers live in the
+  <a href="https://claude.ai/code/artifact/276b641f-7c2a-4aea-97f0-d6d1e8e75514" target="_blank" rel="noopener">Playbook &#8599;</a>
+</div>
+
+<div class="hero">
+  One gutter job nets him $400&ndash;800. The website is $500, one time.
+</div>
+
+<h2>The offer</h2>
+<div class="card">
+  <div class="row"><span class="k">Price</span><span><b>$500 one time.</b> No monthly, no contract.</span></div>
+  <div class="row"><span class="k">What he gets</span><span>One-page site, works on phones, lead form that emails him</span></div>
+  <div class="row"><span class="k">Hosting</span><span>Free, forever. Actually costs us nothing.</span></div>
+  <div class="row"><span class="k">Changes</span><span>Small ones free. Phone number, hours, services.</span></div>
+  <div class="row"><span class="k">Who owns it</span><span>He does. Domain is in his name.</span></div>
+  <div class="row"><span class="k">Domain</span><span>$12&ndash;15/year, his card, his account</span></div>
+  <div class="row"><span class="k">Timeline</span><span>Already built. Live on his domain same day he pays.</span></div>
+</div>
+
+<h2>Ask these</h2>
+<div class="card">
+  <ul>
+    <li><b>"What are you paying Angi or Thumbtack right now?"</b> &mdash; the sore spot. Let him vent.</li>
+    <li>"How many of those leads actually turn into jobs?"</li>
+    <li>"Do you have a website right now?"</li>
+    <li>"When someone calls you, are you picking up or is it going to voicemail?"</li>
+    <li>"Whose name is the domain in?" (if he has one)</li>
+  </ul>
+</div>
+
+<h2>Say these</h2>
+<div class="say">
+  <p><span class="q">Opening</span>
+  "I build websites for gutter companies. Yours is already built &mdash; I can text
+  you the link right now, take a look and tell me if it's wrong."</p>
+
+  <p><span class="q">On price</span>
+  "Five hundred, one time. No monthly. One job pays for it four times over."</p>
+
+  <p><span class="q">On Angi</span>
+  "A lead off your own website is yours alone. Nobody else got it."</p>
+
+  <p><span class="q">On why so cheap</span>
+  "It's one page, not a twenty-page thing, and I've got the template. Takes me
+  hours, not weeks. I'd rather do a lot of them than charge one guy six grand."</p>
+
+  <p><span class="q">Closing</span>
+  "I'll text you a link to pay. Once it's paid I'll point it at your domain
+  today."</p>
+</div>
+
+<h2>Getting paid</h2>
+<div class="card">
+  <div class="row"><span class="k">How</span><span>Text him the Stripe link. He taps it, pays by card on his phone.</span></div>
+  <div class="row"><span class="k">When</span><span><b>All $500 before it goes live</b> on his domain</span></div>
+  <div class="row"><span class="k">Half now?</span><span>Push back once. If he insists, take it &mdash; but no launch until paid in full.</span></div>
+  <div class="row"><span class="k">Cash / check / Venmo</span><span><b>No.</b> Never to your own account. Everything through the link.</span></div>
+</div>
+
+<h2>Never say</h2>
+<div class="card never" style="border-left:3px solid var(--warn)">
+  <ul>
+    <li><b>"It's done"</b> &mdash; until Tim confirms the link is live. Text him first, takes ten seconds. This already bit us once.</li>
+    <li><b>"Licensed and insured"</b> about any client, unless he told you so himself.</li>
+    <li><b>"We'll get you on page one of Google."</b> Nobody can promise that.</li>
+    <li><b>"We'll call your leads for you."</b> An AI making those calls is illegal. We don't sell it.</li>
+    <li><b>Any monthly service.</b> Doesn't exist yet. Don't presell it.</li>
+  </ul>
+</div>
+
+<h2>If he stalls</h2>
+<div class="card">
+  <ul>
+    <li><b>"I need to think about it."</b> &rarr; "Sure. The site's live at that link either way, take a look tonight. I'll check back Thursday."</li>
+    <li><b>"I already have a website."</b> &rarr; "Pull it up on your phone right now. Does it look right?" Most don't.</li>
+    <li><b>"My nephew is doing one."</b> &rarr; "How long's that been in the works?" Usually months. Ours is done today.</li>
+    <li><b>"Too expensive."</b> &rarr; "What do you spend on Angi in a month?" It's almost always more.</li>
+  </ul>
+</div>
