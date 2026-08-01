@@ -25,3 +25,4 @@ Formspree dashboard.** No code change needed.
 |---|---|
 | `BRANDON-CONTEXT.md` | Brandon's background, how to talk to him about tooling |
 | `CLIENT-SITES.md` | Technical architecture, Formspree setup, pricing, roadmap |
+| `MARKET-PRICING.md` | 2026 competitor pricing, our run costs, hosting decision |
