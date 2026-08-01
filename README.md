@@ -36,4 +36,5 @@ Formspree dashboard.** No code change needed.
 | `ETHICS-AND-AGREEMENTS.md` | Lead ownership, Tim/Brandon working agreement, non-payment recourse |
 | `AI-CALLING-LEGAL.md` | Why we don't offer AI voice calling (TCPA) |
 | `AGENCY-PLATFORMS.md` | GoHighLevel vs alternatives; build-vs-buy |
+| `PAYMENTS.md` | **How we take money.** Stripe setup, terms, Brandon's payment text |
 | `UNIT-ECONOMICS.md` | Cost per client, margins, what we can track |
