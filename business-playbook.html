@@ -1,0 +1,310 @@
+<title>The Business Playbook</title>
+<style>
+  :root{
+    --bg:#f6f3ee; --card:#fff; --ink:#1e2429; --soft:#5a6167;
+    --line:#e2dccf; --navy:#16232f; --rust:#c15a2e; --good:#2f7d54; --warn:#b8842a;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#141a1f; --card:#1c242b; --ink:#e8e6e1; --soft:#9aa4ac;
+           --line:#2c353d; --navy:#dfe4e8; --rust:#e0784a; }
+  }
+  :root[data-theme="dark"]{
+    --bg:#141a1f; --card:#1c242b; --ink:#e8e6e1; --soft:#9aa4ac;
+    --line:#2c353d; --navy:#dfe4e8; --rust:#e0784a;
+  }
+  :root[data-theme="light"]{
+    --bg:#f6f3ee; --card:#fff; --ink:#1e2429; --soft:#5a6167;
+    --line:#e2dccf; --navy:#16232f; --rust:#c15a2e;
+  }
+  *{ box-sizing:border-box; }
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    background:var(--bg); color:var(--ink); line-height:1.55;
+    padding:28px 20px 60px; max-width:820px; margin:0 auto;
+  }
+  h1{ font-size:1.5rem; letter-spacing:-.01em; margin-bottom:4px; }
+  .sub{ color:var(--soft); font-size:.92rem; margin-bottom:28px; }
+  h2{ font-size:1.05rem; margin:34px 0 10px; }
+  .card{
+    background:var(--card); border:1px solid var(--line);
+    border-radius:10px; padding:20px; margin-bottom:16px;
+  }
+  .row{ display:flex; gap:10px; padding:8px 0; border-top:1px solid var(--line);
+    font-size:.9rem; align-items:baseline; }
+  .row:first-child{ border-top:none; }
+  .row .k{ color:var(--soft); min-width:150px; flex-shrink:0; }
+  .note{ background:var(--card); border:1px solid var(--line);
+    border-left:3px solid var(--rust); border-radius:6px;
+    padding:14px 16px; font-size:.89rem; color:var(--soft); margin-top:16px; }
+  .note b{ color:var(--ink); }
+  .big{ background:var(--card); border:1px solid var(--line);
+    border-left:3px solid var(--good); border-radius:6px;
+    padding:16px; font-size:.95rem; margin:18px 0; }
+  .big b{ color:var(--ink); }
+  .tbl{ width:100%; border-collapse:collapse; font-size:.88rem; }
+  .tbl th{ text-align:left; color:var(--soft); font-weight:600;
+    padding:8px 10px 8px 0; border-bottom:1px solid var(--line); font-size:.82rem;
+    text-transform:uppercase; letter-spacing:.04em; }
+  .tbl td{ padding:9px 10px 9px 0; border-bottom:1px solid var(--line);
+    vertical-align:top; }
+  .tbl tr:last-child td{ border-bottom:none; }
+  .scroll{ overflow-x:auto; }
+  .win{ color:var(--good); font-weight:700; }
+  .caveat{ font-size:.82rem; color:var(--soft); font-style:italic; margin-top:8px; }
+</style>
+
+<h1>The Business Playbook</h1>
+<div class="sub">
+  Brandon sells, Tim builds. Researched August 2026 with real market numbers.<br>
+  Per-client status and the questions to ask are on the
+  <a href="https://claude.ai/code/artifact/70fe4605-e8f6-4f37-b214-e961b617b595" target="_blank" rel="noopener" style="color:var(--rust)">Client Tracker &#8599;</a>
+</div>
+
+<h2>Where we actually stand</h2>
+<div class="card">
+  <div class="row"><span class="k">Sites built</span><span>Two. Both live, both working, both tested.</span></div>
+  <div class="row"><span class="k">Revenue so far</span><span><b>$0.</b> Nobody has paid us anything yet.</span></div>
+  <div class="row"><span class="k">What that means</span><span>We're pre-revenue, not failing. The product exists and works. What's missing is one signature.</span></div>
+  <div class="row"><span class="k">The only goal</span><span>Get client #1 to pay. Not five clients, not a system, not a brand.</span></div>
+</div>
+
+<div class="note">
+  <b>Why the $0 matters:</b> two finished sites with nobody paying means our
+  problem is <b>sales, not product.</b> Building a third free site does not move
+  us forward. Getting one of these two to say yes does. Everything below is aimed
+  at that.
+</div>
+
+<h2>What a gutter contractor actually earns</h2>
+<div class="sub" style="margin-bottom:12px">
+  You have to know his numbers to price anything. Here's what a gutter job is worth to him.
+</div>
+
+<div class="scroll">
+<table class="tbl">
+  <tr><th>Job</th><th>What the homeowner pays</th></tr>
+  <tr><td>Seamless gutter install</td><td>$8&ndash;17 per foot. Typical house is 150&ndash;200 feet, so <b>$1,200&ndash;3,400</b> a job</td></tr>
+  <tr><td>Gutter guards</td><td>$1,500&ndash;4,500 whole house</td></tr>
+  <tr><td>Gutter cleaning</td><td>$150&ndash;250 a visit</td></tr>
+  <tr><td>Copper (high end)</td><td>$30&ndash;50 per foot</td></tr>
+</table>
+</div>
+
+<div class="big">
+  <b>His margin is 20&ndash;40%</b>, which is high for the trades &mdash; roofing and
+  general construction run 10&ndash;15%. So on a typical $2,000 install he keeps
+  roughly <b>$400&ndash;800.</b>
+  <br><br>
+  <b>Read that number again, because it's the whole pitch:</b> one job nets him
+  more than our entire $500 website costs. One job a year covers a $150/month
+  retainer four times over.
+</div>
+
+<h2>What he already pays for leads</h2>
+<div class="sub" style="margin-bottom:12px">
+  This is the most useful thing on this page. He is already spending this money today.
+</div>
+
+<div class="scroll">
+<table class="tbl">
+  <tr><th>Where</th><th>Cost per lead</th><th>The catch</th></tr>
+  <tr><td>Angi / HomeAdvisor</td><td>$20&ndash;70</td><td>Same lead sold to 3&ndash;8 contractors at once. He's in a race every time.</td></tr>
+  <tr><td>Thumbtack</td><td>$15&ndash;55</td><td>Also shared. Closes 8&ndash;25%.</td></tr>
+  <tr><td>Google Local Services</td><td>$53 average</td><td>Pay per lead, and he bids against everyone.</td></tr>
+</table>
+</div>
+
+<div class="big">
+  <b>Cost per job he actually books, after the ones that don't close: $150&ndash;667.</b>
+  On Angi, roughly $667. He is paying that <b>today</b>, every month, forever.
+  <br><br>
+  Our $500 website is a one-time cost <b>less than one booked Angi job</b>, and it
+  sends him leads nobody else is racing him for. Our $100&ndash;150/month is
+  <b>two or three Angi leads</b> &mdash; not per job, per <i>lead</i>, most of which
+  never close.
+</div>
+
+<div class="note">
+  <b>How to use this on a call:</b> ask what he's paying Angi or Thumbtack right
+  now. He'll tell you, and he'll be annoyed about it &mdash; contractors hate
+  shared leads. Then the pitch writes itself: <b>"this costs less than one of
+  those leads, and you're not competing with five other guys for it."</b>
+  <br><br>
+  Don't lead with this. Ask first, let him say the number out loud, then land it.
+</div>
+
+<h2>What he spends on marketing overall</h2>
+<div class="card">
+  <div class="row"><span class="k">Typical budget</span><span>5&ndash;15% of revenue. For a shop under $1M, that's <b>$2,000&ndash;8,000 a month.</b></span></div>
+  <div class="row"><span class="k">Newer businesses</span><span>Spend more, 15&ndash;20%, because they have to buy awareness</span></div>
+  <div class="row"><span class="k">Our $150/month is</span><span><b>1&ndash;6% of what he already spends.</b> Not a stretch purchase. Barely a rounding error.</span></div>
+</div>
+
+<div class="note">
+  <b>Why this matters for how you sell:</b> he is not deciding whether to spend
+  money on marketing. He's already spending thousands. You're asking for a small
+  slice of an existing budget &mdash; that's a much easier conversation than
+  convincing someone to start spending.
+</div>
+
+<h2>What Podium is, and why we keep bringing it up</h2>
+<div class="card">
+  <div class="row"><span class="k">What it does</span><span>Auto-texts customers for Google reviews, puts a text-us chat box on the website, and dumps all texts, calls, and DMs into one inbox so nothing gets missed. Also does text-to-pay.</span></div>
+  <div class="row"><span class="k">Who buys it</span><span>Local service businesses &mdash; dentists, auto shops, home services</span></div>
+  <div class="row"><span class="k">Sticker price</span><span>$399&ndash;999/month, and they won't publish it. Sales call only.</span></div>
+  <div class="row"><span class="k">Real cost</span><span><b>$450&ndash;600/month</b> for a small shop once the add-ons land, plus $500 setup</span></div>
+  <div class="row"><span class="k">Reputation</span><span>4.6/5 on G2, but <b>1.5/5 on Trustpilot</b> &mdash; billing disputes and hard-to-cancel contracts</span></div>
+</div>
+
+<div class="big">
+  <b>Podium is the closest thing to what we'd sell at $100&ndash;150/month, and it
+  costs four times more.</b> That's not a weakness on our end, it's the pitch.
+  Podium is enterprise software sold to a two-truck gutter company that will use
+  one of its nine features.
+  <br><br>
+  <b>We sell the one feature they'd actually use, at a quarter of the price, with
+  no contract.</b>
+</div>
+
+<h2>Podium vs GoHighLevel &mdash; what's the difference?</h2>
+<div class="sub" style="margin-bottom:12px">
+  They get mentioned together but they are not the same kind of thing at all.
+</div>
+
+<div class="scroll">
+<table class="tbl">
+  <tr><th></th><th>GoHighLevel</th><th>Podium</th></tr>
+  <tr><td><b>Who buys it</b></td><td><b>You</b>, the agency</td><td><b>Jason</b>, the contractor</td></tr>
+  <tr><td><b>Who pays</b></td><td>You do, up front</td><td>The client does</td></tr>
+  <tr><td><b>Price</b></td><td>$97&ndash;297/month</td><td>$450&ndash;600/month</td></tr>
+  <tr><td><b>Covers</b></td><td>Unlimited clients on the $297 tier</td><td>One business</td></tr>
+  <tr><td><b>Your role</b></td><td>Middleman reselling it under your brand</td><td>None &mdash; you're not involved</td></tr>
+</table>
+</div>
+
+<div class="big">
+  <b>GoHighLevel is a tool for agencies to resell. Podium is a product sold
+  straight to the business owner.</b> That's the whole difference.
+  <br><br>
+  If we bought GoHighLevel, we'd pay $297/month and put Jason, Josh, and eight
+  more contractors inside it as sub-accounts, each one thinking it's our
+  software. If Jason bought Podium, he'd pay $450+/month directly and we'd have
+  nothing to do with it.
+  <br><br>
+  <b>Why we do neither:</b> GoHighLevel means paying $297/month before anyone has
+  paid us, and our margin becomes whatever we can charge above their fee. Tim
+  builds the same thing for a few dollars a month, so we keep the whole margin
+  instead of renting it.
+</div>
+
+<h2>Booking appointments &mdash; the honest answer</h2>
+<div class="sub" style="margin-bottom:12px">
+  This one surprised us. The research argues against building it.
+</div>
+
+<div class="card">
+  <div class="row"><span class="k">Homeowners who call</span><span><b>83%</b> still prefer phoning a contractor over booking online</span></div>
+  <div class="row"><span class="k">Prefer online booking</span><span>Only <b>12%</b></span></div>
+  <div class="row"><span class="k">Phone vs form</span><span>Phone leads convert <b>10&ndash;15x better</b> than web forms</span></div>
+  <div class="row"><span class="k">Speed matters more</span><span><b>78%</b> hire whoever calls back within 5 minutes</span></div>
+</div>
+
+<div class="big">
+  <b>A gutter estimate can't be booked like a haircut.</b> You have to measure the
+  house before quoting. So a calendar slot isn't really booking a job &mdash; it's
+  booking a visit that still needs a phone conversation to qualify. Skip that
+  conversation and you send a truck to a house you can't actually quote.
+  <br><br>
+  <b>So the biggest win isn't a booking calendar. It's calling back fast.</b>
+  That's what the auto-text and instant lead alert already do, and it's why they
+  come first on the ladder.
+</div>
+
+<div class="note">
+  <b>That said, booking is still worth offering &mdash; as a fallback, not the main
+  event.</b> Roughly 15&ndash;20% of people won't call: they're browsing at 10pm, or
+  they're younger and just don't phone strangers. A "pick a time" button captures
+  those instead of losing them.
+  <br><br>
+  <b>Cal.com's free tier does this at $0</b> &mdash; unlimited bookings, email and
+  text reminders, drops into the site we already built. Nothing to host, nothing
+  to maintain.
+  <br><br>
+  <b>What we will NOT do is compete with Jobber.</b> Jobber is real scheduling
+  software for contractors &mdash; $29/month to start, $99/month once you want
+  automatic text reminders and two-way texting. If a client wants a full job
+  calendar with dispatching, that's Jobber's job, and the right answer is to say
+  so. We're not going to underprice a real product with a worse version of it.
+</div>
+
+<h2>Our pricing, and why it holds up</h2>
+<div class="scroll">
+<table class="tbl">
+  <tr><th>What</th><th>Price</th><th>Costs us</th></tr>
+  <tr><td>Website</td><td><b>$500 one-time</b></td><td>Hosting $0, form $0. Just Tim's time.</td></tr>
+  <tr><td>Lead alerts + auto-text</td><td><b>$100&ndash;150/month</b></td><td>A few dollars a month per client</td></tr>
+  <tr><td>Booking calendar (Cal.com embed)</td><td>Bundle it in, don't price it</td><td>$0. Nice-to-have, not the pitch.</td></tr>
+  <tr><td>Reviews, Google profile</td><td>Later</td><td>Not built. Don't sell it yet.</td></tr>
+</table>
+</div>
+
+<div class="note">
+  <b>Nobody is close to $500.</b> Local agencies charge $6,000&ndash;35,000.
+  Freelancers charge $3,000&ndash;8,000. The cheapest real competitor is a
+  $99/month shop &mdash; $1,188 in year one, and the client never owns the site.
+  <br><br>
+  <b>Don't discount.</b> If he balks, split it: "$250 now, $250 when you're happy."
+  Never drop the number. Dropping it says you made the first one up.
+  <br><br>
+  <b>Cheap is fine. Free is not.</b> We already gave away the demo. That's the free
+  part and it's enough.
+</div>
+
+<h2>The one thing that will kill a monthly client</h2>
+<div class="big">
+  <b>43% of all churn happens in the first 90 days</b> &mdash; before the work has
+  had time to prove itself. And the #1 reason clients leave isn't price, it's
+  feeling like nothing is happening.
+  <br><br>
+  <b>So the first month matters more than the next twelve.</b> Get him a real,
+  visible lead in week one and say something about it. A client who sees one lead
+  come through stays for years &mdash; retainer clients average <b>56 months.</b>
+  A client who hears nothing for 30 days cancels.
+  <br><br>
+  <b>Your job after the sale isn't nothing.</b> Text him when a lead comes in.
+  "Did that one turn into a job?" That single question is most of retention.
+</div>
+
+<h2>Why volume, not big fish</h2>
+<div class="note">
+  Ten clients at $500 beats one at $5,000, because the ten are easy yeses and the
+  one takes three months of meetings and a proposal deck.
+  <br><br>
+  <b>And gutters aren't special.</b> Roofing, landscaping, HVAC, concrete, fencing
+  &mdash; same pitch, same site, different photos. Once the gutter version works,
+  it's a template we point at any local trade.
+  <br><br>
+  <b>The websites are the door, not the business.</b> One-time work means starting
+  from zero every month. The recurring $150 is what actually compounds &mdash;
+  month 13 builds on month 12 instead of replacing it. Sell the site to get in the
+  door; the monthly is the real product.
+</div>
+
+<h2>Rules we don't break</h2>
+<div class="card">
+  <div class="row"><span class="k">No platform yet</span><span>Don't sign up for GoHighLevel. $97&ndash;297/month before a single client pays is money out the door for nothing.</span></div>
+  <div class="row"><span class="k">Nothing gets built free</span><span>Past the two demos, nothing new gets built until someone pays or puts money down. Verbal interest isn't a build trigger.</span></div>
+  <div class="row"><span class="k">Don't promise dates</span><span>"Let me check and call you back tomorrow" never costs a deal. An invented date becomes a broken promise in three weeks.</span></div>
+  <div class="row"><span class="k">Sell outcomes, not vendors</span><span>"Your phone buzzes the second a lead comes in." Name a vendor and he prices the vendor instead of the result.</span></div>
+  <div class="row"><span class="k">No false claims</span><span>Never put "licensed and insured" on a client's site until the owner personally confirms it. That's his legal liability, not ours.</span></div>
+</div>
+
+<div class="caveat">
+  Sources: job pricing and margins from home-services cost guides (most are
+  lead-gen funded &mdash; ranges converge across 8+ of them, treat as directional).
+  Lead costs from agency-published analyses, triangulated across 6 sources. The
+  $53 Google LSA figure is the strongest number here, from a real dataset of
+  $6.72M in ad spend across 888 contractors. Podium pricing is third-party
+  reported; they don't publish it. GoHighLevel and Twilio pricing is from their
+  own sites.
+</div>
